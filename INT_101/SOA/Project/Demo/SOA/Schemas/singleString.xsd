@@ -1,0 +1,18 @@
+<xsd:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified"
+        xmlns="http://xmlns.oracle.com/singleString"
+	targetNamespace="http://xmlns.oracle.com/singleString"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="request" type="requesttype" />
+        <xsd:complexType name="requesttype">
+        <xsd:sequence>
+        <xsd:element name="input" type="xsd:string"/>
+        </xsd:sequence>
+        </xsd:complexType>
+        	<xsd:element name="response" type="responsetype" />
+        <xsd:complexType name="responsetype">
+        <xsd:sequence>
+        <xsd:element name="output" type="xsd:string"/>
+        </xsd:sequence>
+        </xsd:complexType>
+</xsd:schema>
